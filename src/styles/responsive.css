@@ -1,0 +1,129 @@
+@media (max-width: 1020px) {
+  .cc .wrap {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .cc nav {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .cc .logo-link {
+    flex-basis: clamp(125px, 20vw, 160px);
+    width: clamp(125px, 20vw, 160px);
+  }
+
+  .cc .nav-links,
+  .cc .nav-join {
+    display: none;
+  }
+
+  .cc .nav-actions {
+    gap: 10px;
+  }
+
+  .cc .burger {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .cc .intro-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .cc .intro-carousel {
+    height: clamp(300px, 86vw, 390px);
+  }
+
+  .cc .grid4,
+  .cc .arena,
+  .cc .fcols,
+  .cc .three {
+    grid-template-columns: 1fr;
+  }
+
+  .cc .heroRow {
+    gap: 30px;
+  }
+
+  .cc .sub {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cc .vstage {
+    padding: 20px 14px;
+  }
+
+  .cc .btn {
+    gap: 30px;
+  }
+
+  .cc .hero-title {
+    font-size: clamp(62px, 16.8vw, 123px);
+  }
+
+  .cc .hero {
+    width: calc(100vw - 40px);
+    margin-left: calc((100% - (100vw - 40px)) / 2);
+  }
+
+  .cc .heroRow {
+    margin-top: 46px;
+  }
+
+  .cc .scrollRow {
+    margin-top: 58px;
+  }
+
+  .cc .how-title {
+    gap: 8px;
+    font-size: clamp(20px, 6vw, 32px);
+  }
+
+  .cc .how-tech-lines {
+    flex-basis: clamp(120px, 43vw, 230px);
+    height: 40px;
+    font-size: clamp(20px, 6vw, 32px);
+  }
+
+  .cc .how-title .num {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cc .logo-link {
+    flex-basis: clamp(100px, 32vw, 125px);
+    width: clamp(100px, 32vw, 125px);
+  }
+
+  .cc .nav-actions {
+    gap: 7px;
+  }
+
+  .cc .nav-login {
+    font-size: 9px;
+  }
+
+  .cc .theme-toggle {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .cc .burger {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc * {
+    animation: none !important;
+  }
+}
