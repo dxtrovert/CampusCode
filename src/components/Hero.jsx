@@ -26,9 +26,7 @@ function Hero() {
           lines={hero.title}
           fontSize={224}
           lineLetterSpacings={[-0.055, -0.04, -0.055]}
-          outlinedLines={[1]}
-          solidOnHoverLines={[1]}
-          autoSelectLines={[0, 2]}
+          autoSelectLines={[0, 1, 2]}
           sweep={false}
         />
         <i className="dot" aria-hidden="true" />
