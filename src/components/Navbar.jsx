@@ -19,7 +19,7 @@ function Navbar() {
         ))}
       </div>
       <div className="nav-actions">
-        <a className="nav-login mono" href="#join">{nav.login}</a>
+        <a className="nav-login mono" href="/login">{nav.login}</a>
         <button
           ref={toggleRef}
           className="theme-toggle"
