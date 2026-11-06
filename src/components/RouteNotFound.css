@@ -1,0 +1,72 @@
+.route-not-found {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+  justify-items: start;
+  padding: clamp(24px, 8vw, 112px);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  color: var(--fg);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.route-not-found-label,
+.route-not-found-actions {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.route-not-found-label {
+  color: var(--status);
+  font-size: 9px;
+}
+
+.route-not-found-code {
+  margin: 18px 0 0;
+  color: var(--brand-purple);
+  font-size: clamp(82px, 18vw, 180px);
+  font-weight: 900;
+  letter-spacing: -.09em;
+  line-height: .9;
+}
+
+.route-not-found h1 {
+  margin: 18px 0 0;
+  font-size: clamp(26px, 5vw, 48px);
+  letter-spacing: -.06em;
+}
+
+.route-not-found-copy {
+  margin: 10px 0 0;
+  color: var(--mute);
+  font-size: 13px;
+}
+
+.route-not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+  font-size: 9px;
+}
+
+.route-not-found-actions a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 16px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.route-not-found-actions a:hover {
+  border-color: var(--brand-purple);
+  color: var(--brand-purple);
+}

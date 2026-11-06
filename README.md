@@ -30,3 +30,10 @@ starts a frontend-only demo session in `sessionStorage`. No credential is sent
 to a backend. Visit `/student/overview` after logging in; the dashboard uses
 clearly labeled sample data. The Profile page can edit demo information for the
 current tab session, and Log Out clears it.
+
+## Vercel deployment
+
+This Vite SPA is configured in `vercel.json` to build with `npm run build`,
+publish `dist`, and rewrite `/login`, `/register`, and `/student/*` routes to
+`index.html`. The Vercel project root directory should be the repository root
+(the directory containing `package.json`).
